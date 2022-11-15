@@ -28,3 +28,53 @@ const StyledTab = styled(Tab)({
         fontSize: "15px"
       },
 })
+
+function Navigation({ handlePageChange }) {
+    const [value, setValue] = React.useState('about');
+
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
+    };
+
+    return (
+        <Box sx={{ width: '100%', }} style={styles.navigation}>
+            <Tabs
+                value={value}
+                onChange={handleChange}
+                centered
+                textColor="inherit"
+                sx={{
+                    '& .MuiTabs-indicator': { backgroundColor: "#D3D3D3" }
+                }}
+                aria-label="navigation tabs"
+                >
+                    <StyledTab
+                    value="about"
+                    label="About Me"
+                    href="#about"
+                    onClick={() => handlePageChange('About')}
+                    />
+                    <StyledTab
+                    value="portfolio"
+                    label="Portfolio"
+                    href="#portfolio"
+                    onClick={() => handlePageChange('Portfolio')}
+                    />
+                    <StyledTab
+                    value="contact"
+                    label="Contact Me"
+                    href="#contact"
+                    onClick={() => handlePageChange('Contact')}
+                    />
+                    <StyledTab
+                    value="resume"
+                    label="Resume"
+                    href="#resume"
+                    onClick={() => handlePageChange('Resume')}
+                    />
+            </Tabs>
+        </Box>
+    );
+}
+
+export default Navigation;

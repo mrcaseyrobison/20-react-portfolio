@@ -62,3 +62,17 @@ img {
   width: 500px;
   height: 500px;
 }
+
+#resume-section {
+  background-color: rgba(255, 255, 255, 0.929);
+  border-top: solid black 5px;
+  border-bottom: solid black 5px;
+}
+
+#download-btn {
+  width: 300px;
+  margin-bottom: 20px;
+  color: white;
+  background-color:darkslateblue;
+  border-radius: 10px;
+}

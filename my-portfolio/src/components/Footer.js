@@ -4,7 +4,7 @@ import {GrGithub, GrLinkedin, GrMail } from 'react-icons/gr'
 
 export default function Footer() {
     return (
-        <Grid container spacing={2} justifyContent="center" className="footer">
+        <Grid container spacing={0} justifyContent="center" className="footer">
             <Grid item>
                 <a href="mailto:mrcaseyrobison@gmail.com">
                     <h3><GrMail /></h3>

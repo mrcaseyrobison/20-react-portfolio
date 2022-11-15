@@ -18,10 +18,10 @@ const StyledTab = styled(Tab)({
         color: "#000000"
     },
     "&.MuiButtonBase-root.MuiTab-root": {
-        fontSize: "15px",
+        fontSize: "20px",
         fontWeight: 700,
-        paddingLeft: 0,
-        paddingRight: 0
+        paddingLeft: 5,
+        paddingRight: 5
       },
       "&.Mui-selected": {
         color: "#000000",
@@ -44,7 +44,7 @@ function Navigation({ handlePageChange }) {
                 centered
                 textColor="inherit"
                 sx={{
-                    '& .MuiTabs-indicator': { backgroundColor: "#D3D3D3" }
+                    '& .MuiTabs-indicator': { backgroundColor: "#000000" }
                 }}
                 aria-label="navigation tabs"
                 >
@@ -62,7 +62,7 @@ function Navigation({ handlePageChange }) {
                     />
                     <StyledTab
                     value="contact"
-                    label="Contact Me"
+                    label="Contact"
                     href="#contact"
                     onClick={() => handlePageChange('Contact')}
                     />

@@ -11,6 +11,13 @@
     align-items: center;
     flex-direction: column;
 }
+
+.footer {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.929);
+  border-top: solid black 5px;
+}
+
 .app {
   font-family: "Roboto";
   color: black;
@@ -22,16 +29,15 @@
 }
 
 #about-me {
-  /* width: 100%; */
   background-color: rgba(255, 255, 255, 0.929);
   border-top: solid black 5px;
   border-bottom: solid black 5px;
   margin-top: 20px;
   padding: 50px;
+  margin-bottom: 20px;
 }
 
 #contact-form {
-  /* width: 100; */
   background-color: rgba(255, 255, 255, 0.929);
   border-top: solid black 5px;
   border-bottom: solid black 5px;

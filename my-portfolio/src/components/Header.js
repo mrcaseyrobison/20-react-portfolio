@@ -17,7 +17,7 @@ const styles = {
 
 export default function Header({ handlePageChange }) {
     return (
-        <Grid className="header" container spacing={1} style={styles.header}>
+        <Grid className="header" container spacing={0} style={styles.header}>
             <Grid item xs={12} md={2}>
                 <h1 style={styles.title}>Casey Robison</h1>
             </Grid>

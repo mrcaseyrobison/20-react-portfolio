@@ -24,7 +24,7 @@ export default function About() {
   return (
     <div style={styles.section} className="about">
       <Grid container direction="column" alignItems="center">
-      <img src={headShot} alt="headshot" height="300px" style={styles.image} />
+      <img id="headshot" src={headShot} alt="headshot" style={styles.image} />
     <div>
     <section id="about-me">
       <h2>About Me:</h2>

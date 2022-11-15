@@ -1,4 +1,5 @@
-import Project from '../Project.data';
+import React from 'react';
+import Project from '../Project';
 import data from '../Project.data';
 import { Grid } from '@mui/material';
 
@@ -10,19 +11,19 @@ const styles = {
 
 export default function Portfolio() {
     return (
-        <div>
-            <h2 style={styles.title}>My Projects</h2>
-            <Grid container spacing ={0} justifyContent="center">
-                {data.map(({ id, title, description, image, repo}) => {
-                    <Project
-                    id={id}
-                    title={title}
-                    desription={description}
-                    image={image}
-                    repo={repo}
-                />
-                })}
-            </Grid>
-        </div>       
+      <div id="project-container">
+        <Grid id="projects" container spacing={2} justifyContent="center">
+          {data.map(({ id, title, description, image, repo }) => (
+            <Project
+              id={id}
+              title={title}
+              description={description}
+              image={image}
+              repo={repo}
+            />
+          ))}
+        </Grid>
+      </div>
     );
-}
+  }
+      

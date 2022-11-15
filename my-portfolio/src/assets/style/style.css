@@ -37,6 +37,11 @@
   margin-bottom: 20px;
 }
 
+#headshot {
+  height: 300px;
+  width: 300px;
+}
+
 #contact-form {
   background-color: rgba(255, 255, 255, 0.929);
   border-top: solid black 5px;
@@ -47,4 +52,13 @@
 
 #form {
   border: 1px solid black; 
+}
+
+#project-container {
+  margin-top: 20px;
+}
+
+img {
+  width: 500px;
+  height: 500px;
 }

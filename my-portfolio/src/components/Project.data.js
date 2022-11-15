@@ -1,8 +1,8 @@
 import whiskyImage from "../assets/images/whisky_taste.jpg";
-import cardsForJokes from "../assets/images/cardsforjokesjpg";
+import cardsForJokes from "../assets/images/cardsforjokes.jpg";
 import communityVision from "../assets/images/seattle_center.jpg";
 import noteTaker from "../assets/images/note-taker.jpg";
-import weatherDash from "../assets/images/weather-dashjpg";
+import weatherDash from "../assets/images/weather-dash.jpg";
 import dayPlanner from "../assets/images/day-planner.jpg";
 
 const data = [

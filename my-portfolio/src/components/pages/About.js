@@ -50,9 +50,10 @@ export default function About() {
         the UW.
       </p>
       <p>
-        As an avid traveler and amatuer photographer, I am using this space to
-        showcase just a handful of photos from my travels. These photos are
-        placeholders for forthcoming web projects.
+        In May of 2022 I enrolled in a Full Stack Web Dev Bootcamp at the UW.
+        It was in Bootcamp that I developed (pun intnded) my skills as beginner full stack web developer. 
+        This portfolio has been designed as a way to display what I have learned so far!
+        What a ride it has been--I really look forward to taking these skills and building on them even further.
       </p>
       </section>
         </div>

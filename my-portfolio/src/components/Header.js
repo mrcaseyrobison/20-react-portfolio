@@ -11,7 +11,8 @@ const styles = {
     },
     title: {
         marginTop: 0,
-        marginBottom: 0
+        marginBottom: 5,
+        width: '500px',
     }
 };
 

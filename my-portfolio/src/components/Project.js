@@ -7,9 +7,9 @@ import CardMedia from '@mui/material/CardMedia';
 
 const styles = {
     box: {
-        border: "1px solid #007b6d",
-        backgroundColor: "#000000",
-        color: "#D3D3D3"
+        border: "1px solid #000000",
+        // backgroundColor: "#000000",
+        // color: "#000000"
     }
 };
 
@@ -29,17 +29,17 @@ export default function Project({ id, title, description, image, repo  }) {
               bottom: "0%",
               left: 0,
               width: '100%',
-              bgcolor: 'rgba(0, 0, 0, 0.70)',
-              color: '#D3D3D3',
-              padding: '10px',
+              bgcolor: 'rgba(0, 0, 0, 0.82)',
+              borderTop: 1,
+              color: '#FBFF7E',
+              padding: '20px',
             }}
           >
             <Typography variant="h5">{title}</Typography>
             <Typography variant="body2">{description}</Typography>
 
-            <Grid container spacing={4} justifyContent="center">
+            <Grid id="href" container spacing={4} justifyContent="center">
               <Grid item>
-                {/* refer later if breaking  */}
                 <a href={repo} target="_blank" rel="noreferrer">GitHub Repo</a>
               </Grid>
             </Grid>

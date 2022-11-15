@@ -10,10 +10,11 @@ const styles = {
 };
 
 const formStyle = {
-  borderTop: "1px solid #000000",
+  border: "2px solid #000000",
   borderRadius: "5px",
   padding: 15,
-  backgroundColor: "#00000010",
+  backgroundColor: "#00000001",
+  marginBottom: "25px",
 };
 
 const Contact = () => {
@@ -35,6 +36,38 @@ const Contact = () => {
         <h2 style={styles.title}>Contact Me</h2>
         <form id="form" style={formStyle} onSubmit={handleSubmit}>
           <Grid container direction="column" alignItems="center">
+          <TextField
+              required
+              sx={{
+                "& .MuiInputBase-root": {
+                  color: "#000000",
+                },
+                "& .MuiFormLabel-root": {
+                  color: "#000000",
+                },
+                "& .MuiFormLabel-root.Mui-focused": {
+                  color: "#000000",
+                },
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": {
+                    borderColor: "#000000",
+                  },
+                  "&:hover fieldset": {
+                    borderColor: "#000000",
+                  },
+                  "&.Mui-focused fieldset": {
+                    borderColor: "#000000",
+                  },
+                },
+              }}
+              id="contactName"
+              label="Name"
+              variant="outlined"
+              margin="normal"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              style={{ width: "100%" }}
+            />
             <TextField
               required
               sx={{
@@ -65,7 +98,7 @@ const Contact = () => {
               margin="normal"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              style={{ width: "80%" }}
+              style={{ width: "100%" }}
             />
             <TextField
               required
@@ -99,7 +132,7 @@ const Contact = () => {
               onChange={(e) => setMessage(e.target.value)}
               multiline
               rows={6}
-              style={{ width: "95%" }}
+              style={{ width: "100%" }}
             />
             <Button variant="contained" type="submit">
               Submit

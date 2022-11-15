@@ -15,7 +15,7 @@ const styles = {
 // Custom Styling
 const StyledTab = styled(Tab)({
     '&.MuiTouchRipple-root': {
-        color: "#D3D3D3"
+        color: "#000000"
     },
     "&.MuiButtonBase-root.MuiTab-root": {
         fontSize: "15px",
@@ -24,8 +24,8 @@ const StyledTab = styled(Tab)({
         paddingRight: 0
       },
       "&.Mui-selected": {
-        color: "#D3D3D3",
-        fontSize: "15px"
+        color: "#000000",
+        fontSize: "25px"
       },
 })
 

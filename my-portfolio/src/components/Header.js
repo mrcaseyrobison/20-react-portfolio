@@ -7,7 +7,7 @@ const styles = {
         overflow: 'auto',
         paddingTop: 25,
         paddingBottom: 25,
-        borderBottom: "1px solid #007b6d"
+        borderBottom: "5px solid #000000"
     },
     title: {
         marginTop: 0,
@@ -17,11 +17,11 @@ const styles = {
 
 export default function Header({ handlePageChange }) {
     return (
-        <Grid container spacing={2} style={styles.header}>
-            <Grid item xs={12} md={3}>
+        <Grid className="header" container spacing={1} style={styles.header}>
+            <Grid item xs={12} md={2}>
                 <h1 style={styles.title}>Casey Robison</h1>
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={12}>
                 <Navigation handlePageChange={handlePageChange} />
             </Grid>
         </Grid>

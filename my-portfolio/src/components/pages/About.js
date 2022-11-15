@@ -5,12 +5,12 @@ import headShot from '../../assets/images/headshot.jpeg';
 // Some in-line styling for objects
 const styles = {
   section: {
-    marginTop: 40,
+    marginTop: 20,
     textAlign: "center"
   },
   image: {
     borderRadius: 200,
-    border: "1px solid #000000",
+    border: "5px solid #000000",
   },
   divider: {
     borderTop: "1px solid #000000",
@@ -25,7 +25,8 @@ export default function About() {
     <div style={styles.section} className="about">
       <Grid container direction="column" alignItems="center">
       <img src={headShot} alt="headshot" height="300px" style={styles.image} />
-    
+    <div>
+    <section id="about-me">
       <h2>About Me:</h2>
       <p>
         Born and raised in Seattle WA, I have spent the majority of my career in
@@ -53,6 +54,8 @@ export default function About() {
         showcase just a handful of photos from my travels. These photos are
         placeholders for forthcoming web projects.
       </p>
+      </section>
+        </div>
       </Grid>
     </div>
   );
